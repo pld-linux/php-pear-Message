@@ -1,4 +1,4 @@
-%include        /usr/lib/rpm/macros.php
+%include	/usr/lib/rpm/macros.php
 %define		_class		Message
 %define		_status		beta
 %define		_pearname	%{_class}
