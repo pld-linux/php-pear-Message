@@ -11,7 +11,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	d37e02108ecd6a90fc1e2c71cc875be7
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/Message/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
@@ -34,11 +34,11 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}/{,HMAC,Hash}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/Message/{,HMAC,Hash}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}
-install %{_pearname}-%{version}/HMAC/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}/HMAC
-install %{_pearname}-%{version}/Hash/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_pearname}/Hash
+install %{_pearname}-%{version}/HMAC/*.php $RPM_BUILD_ROOT%{php_pear_dir}/Message/HMAC
+install %{_pearname}-%{version}/Hash/*.php $RPM_BUILD_ROOT%{php_pear_dir}/Message/Hash
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,10 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %dir %{php_pear_dir}/%{_pearname}
-%dir %{php_pear_dir}/%{_pearname}/HMAC
-%dir %{php_pear_dir}/%{_pearname}/Hash
+%dir %{php_pear_dir}/Message/HMAC
+%dir %{php_pear_dir}/Message/Hash
 %doc %{_pearname}-%{version}/README
 %doc %{_pearname}-%{version}/misc
 %{php_pear_dir}/*.php
-%{php_pear_dir}/%{_pearname}/Hash/*.php
-%{php_pear_dir}/%{_pearname}/HMAC/*.php
+%{php_pear_dir}/Message/Hash/*.php
+%{php_pear_dir}/Message/HMAC/*.php
