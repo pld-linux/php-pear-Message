@@ -19,8 +19,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Classes for message hashing and HMAC signature generation
-using the mhash functions.
+Classes for message hashing and HMAC signature generation using the
+mhash functions.
 
 This class has in PEAR status: %{_status}
 
