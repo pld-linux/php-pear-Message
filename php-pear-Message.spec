@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes for message hashing and HMAC signature generation using the
 mhash functions.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasy do generowania skrótów i sygnatur HMAC wiadomo¶ci przy u¿yciu
