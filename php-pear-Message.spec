@@ -1,10 +1,9 @@
-# ToDo:
-# - pl summary / description
 %include        /usr/lib/rpm/macros.php
 %define		_class		Message
 %define		_status		beta
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Message hash and digest (HMAC) generation methods and classes
+Summary(pl):	%{_pearname} - klasy i metody do generowania skrótów (HMAC) wiadomo¶ci
 Name:		php-pear-%{_pearname}
 Version:	0.6
 Release:	1
@@ -22,7 +21,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes for message hashing and HMAC signature generation using the
 mhash functions.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
+
+%description -l pl
+Klasy do generowania skrótów i sygnatur HMAC wiadomo¶ci przy u¿yciu
+funkcji mhash.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
@@ -44,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{php_pear_dir}/%{_pearname}/HMAC
 %dir %{php_pear_dir}/%{_pearname}/Hash
 %doc %{_pearname}-%{version}/README
-%doc %{_pearname}-%{version}/misc/
+%doc %{_pearname}-%{version}/misc
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_pearname}/Hash/*.php
 %{php_pear_dir}/%{_pearname}/HMAC/*.php
