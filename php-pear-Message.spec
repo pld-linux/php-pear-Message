@@ -6,7 +6,7 @@ Summary:	%{_pearname} - Message hash and digest (HMAC) generation methods and cl
 Summary(pl):	%{_pearname} - klasy i metody do generowania skrótów (HMAC) wiadomo¶ci
 Name:		php-pear-%{_pearname}
 Version:	0.6
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	d37e02108ecd6a90fc1e2c71cc875be7
