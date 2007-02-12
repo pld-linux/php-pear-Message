@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Message hash and digest (HMAC) generation methods and classes
-Summary(pl):	%{_pearname} - klasy i metody do generowania skr髏體 (HMAC) wiadomo禼i
+Summary(pl.UTF-8):   %{_pearname} - klasy i metody do generowania skr贸t贸w (HMAC) wiadomo艣ci
 Name:		php-pear-%{_pearname}
 Version:	0.6
 Release:	5
@@ -26,8 +26,8 @@ mhash functions.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasy do generowania skr髏體 i sygnatur HMAC wiadomo禼i przy u縴ciu
+%description -l pl.UTF-8
+Klasy do generowania skr贸t贸w i sygnatur HMAC wiadomo艣ci przy u偶yciu
 funkcji mhash.
 
 Ta klasa ma w PEAR status: %{_status}.
