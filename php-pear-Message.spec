@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Message hash and digest (HMAC) generation methods and classes
-Summary(pl.UTF-8):   %{_pearname} - klasy i metody do generowania skrótów (HMAC) wiadomości
+Summary(pl.UTF-8):	%{_pearname} - klasy i metody do generowania skrótów (HMAC) wiadomości
 Name:		php-pear-%{_pearname}
 Version:	0.6
 Release:	5
